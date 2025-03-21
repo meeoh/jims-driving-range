@@ -78,8 +78,8 @@ const About = () => {
         
         <div className="rounded-lg overflow-hidden shadow-xl">
           <img 
-            src="public/lovable-uploads/5eeb6142-749b-4be8-9160-8009543fb84a.png" 
-            alt="Driving range hitting mats" 
+            src="public/lovable-uploads/b40a96a7-1e82-418b-986f-f6081a5407c1.png" 
+            alt="Jim's Driving Range entrance" 
             className="w-full h-full object-cover"
           />
         </div>
