@@ -524,7 +524,71 @@ img {
 .pricing-note {
   text-align: center;
   color: var(--muted-foreground);
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+
+.pricing-divider {
+  border: none;
+  height: 1px;
+  background-color: var(--border);
+  margin: 3rem auto;
+  width: 100%;
+  max-width: 400px;
+  opacity: 0.6;
+}
+
+.club-rentals {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.club-rentals h3 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  color: var(--foreground);
+}
+
+.rental-options {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .rental-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.rental-option {
+  background-color: var(--muted);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  transition: transform 0.2s ease;
+}
+
+.rental-option:hover {
+  transform: translateY(-2px);
+}
+
+.rental-option h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--foreground);
+}
+
+.rental-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.rental-note {
+  margin-top: 1.5rem;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+  text-align: center;
 }
 
 /* Location Section */
