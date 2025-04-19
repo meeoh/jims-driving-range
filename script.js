@@ -59,26 +59,26 @@ if (window.scrollY > 50) {
 
 // Announcement Banner functionality
 const SHEET_ID = '1p5_QRMi2L_tN13EeLg58sMS__XGCIfx7T9Wp0ZLZU58';
-const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=Announcements`;
+const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=Announcements`;
 
 async function checkAnnouncements() {
   try {
-    const response = await fetch(CSV_URL);
+    const response = await fetch(SHEET_URL);
     const text = await response.text();
+    // Remove the extra "google.visualization.Query.setResponse(" and ");" text
+    const jsonText = text.replace('/*O_o*/\ngoogle.visualization.Query.setResponse(', '').slice(0, -2);
+    const data = JSON.parse(jsonText);
     
-    // Parse CSV (assuming first row is headers)
-    const rows = text.split('\n').slice(1); // Skip header row
-    if (rows.length > 0) {
-      const latestRow = rows[0].split(',');
-      const message = latestRow[0].replace(/^"|"$/g, ''); // Remove quotes
+    if (data.table && data.table.rows && data.table.rows.length > 1) {
+      const message = data.table.rows[1].c[0]?.v; // Get first cell value from second row (index 1)
       
       const banner = document.getElementById('announcement-banner');
       const header = document.getElementById('header');
       const homeSection = document.querySelector('.home');
       
       if (message) {
-        document.getElementById('announcement-text').textContent = message;
-        banner.style.display = 'block';
+        document.getElementById("announcement-text").textContent = message;
+        banner.style.display = "block";
         header.style.top = '40px';
         if (homeSection) {
           homeSection.style.paddingTop = 'calc(40px + 72px)';
