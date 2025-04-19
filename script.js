@@ -58,37 +58,27 @@ if (window.scrollY > 50) {
 }
 
 // Announcement Banner functionality
-const SHEET_ID = '1p5_QRMi2L_tN13EeLg58sMS__XGCIfx7T9Wp0ZLZU58';
-const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=Announcements`;
-
 async function checkAnnouncements() {
   try {
-    const response = await fetch(SHEET_URL);
-    const text = await response.text();
-    // Remove the extra "google.visualization.Query.setResponse(" and ");" text
-    const jsonText = text.replace('/*O_o*/\ngoogle.visualization.Query.setResponse(', '').slice(0, -2);
-    const data = JSON.parse(jsonText);
+    const response = await fetch('announcements.txt');
+    const message = await response.text();
     
-    if (data.table && data.table.rows && data.table.rows.length > 1) {
-      const message = data.table.rows[1].c[0]?.v; // Get first cell value from second row (index 1)
-      
-      const banner = document.getElementById('announcement-banner');
-      const header = document.getElementById('header');
-      const homeSection = document.querySelector('.home');
-      
-      if (message) {
-        document.getElementById("announcement-text").textContent = message;
-        banner.style.display = "block";
-        header.style.top = '40px';
-        if (homeSection) {
-          homeSection.style.paddingTop = 'calc(40px + 72px)';
-        }
-      } else {
-        banner.style.display = 'none';
-        header.style.top = '0';
-        if (homeSection) {
-          homeSection.style.paddingTop = '72px';
-        }
+    const banner = document.getElementById('announcement-banner');
+    const header = document.getElementById('header');
+    const homeSection = document.querySelector('.home');
+    
+    if (message.trim()) {
+      document.getElementById("announcement-text").textContent = message;
+      banner.style.display = "block";
+      header.style.top = '40px';
+      if (homeSection) {
+        homeSection.style.paddingTop = 'calc(40px + 72px)';
+      }
+    } else {
+      banner.style.display = 'none';
+      header.style.top = '0';
+      if (homeSection) {
+        homeSection.style.paddingTop = '72px';
       }
     }
   } catch (error) {
