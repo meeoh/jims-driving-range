@@ -112,9 +112,6 @@ function closeAnnouncement() {
 // Check for announcements when page loads
 document.addEventListener('DOMContentLoaded', () => {
   checkAnnouncements();
-  
-  // Check for new announcements every 5 minutes
-  setInterval(checkAnnouncements, 5 * 60 * 1000);
 });
 
 // Update current year in footer
