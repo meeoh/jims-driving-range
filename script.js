@@ -71,13 +71,12 @@ async function checkAnnouncements() {
     if (rows.length > 0) {
       const latestRow = rows[0].split(',');
       const message = latestRow[0].replace(/^"|"$/g, ''); // Remove quotes
-      const isActive = latestRow[1].trim().toLowerCase() === 'true';
       
       const banner = document.getElementById('announcement-banner');
       const header = document.getElementById('header');
       const homeSection = document.querySelector('.home');
       
-      if (message && isActive) {
+      if (message) {
         document.getElementById('announcement-text').textContent = message;
         banner.style.display = 'block';
         header.style.top = '40px';
