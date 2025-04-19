@@ -1,0 +1,12 @@
+{
+  "name": "jims-driving-range-announcements",
+  "version": "1.0.0",
+  "description": "Fetch announcements from Google Sheets",
+  "main": "fetch_announcements.js",
+  "scripts": {
+    "fetch": "node fetch_announcements.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.9"
+  }
+} 
