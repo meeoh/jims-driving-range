@@ -74,7 +74,7 @@ img {
 /* Header */
 #header {
   position: fixed;
-  top: 0;
+  top: 0;  /* Default position at top */
   left: 0;
   right: 0;
   padding: 1rem 0;
@@ -211,6 +211,8 @@ img {
   display: flex;
   align-items: center;
   overflow: hidden;
+  padding-top: 72px; /* Default padding for just header */
+  transition: padding-top 0.3s ease;
 }
 
 .home-image {
@@ -796,4 +798,51 @@ img {
 
 .footer-legal span {
   color: rgba(255, 255, 255, 0.4);
+}
+
+.announcement-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--primary);
+  color: white;
+  z-index: 51;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.announcement-banner .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.announcement-banner p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+.close-banner {
+  position: absolute;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.close-banner:hover {
+  opacity: 1;
 }
