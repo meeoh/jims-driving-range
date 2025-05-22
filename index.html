@@ -29,9 +29,28 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
 
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-YWEPW34Q2D"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-YWEPW34Q2D");
+  </script>
+
   <body>
     <!-- Announcement Banner -->
-    <div id="announcement-banner" style="display: none;" class="announcement-banner">
+    <div
+      id="announcement-banner"
+      style="display: none"
+      class="announcement-banner"
+    >
       <div class="container">
         <p id="announcement-text"></p>
         <button onclick="closeAnnouncement()" class="close-banner">×</button>
