@@ -1,584 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jim's Driving Range - Kitchener's Premier Golf Facility</title>
-    <meta
-      name="description"
-      content="Jim's Driving Range in Kitchener, Ontario offers over 50 hitting mats and premium practice facilities. Visit us today to improve your golf game!"
-    />
-    <meta name="author" content="Jim's Driving Range" />
-    <meta
-      property="og:image"
-      content="public/lovable-uploads/b40a96a7-1e82-418b-986f-f6081a5407c1.png"
-    />
-    <meta
-      property="og:title"
-      content="Jim's Driving Range - Kitchener's Premier Golf Facility"
-    />
-    <meta
-      property="og:description"
-      content="Practice your golf swing at Jim's Driving Range in Kitchener. Open daily from 9am to 8pm."
-    />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jim's Driving Range - Practice your golf swing in Kitchener. Open daily from 9am to 7pm." />
+  <meta property="og:title" content="Jim's Driving Range - Kitchener" />
+  <meta property="og:description" content="Practice your golf swing at Jim's Driving Range in Kitchener. Open daily from 9am to 7pm." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jimsdrivingrange.ca/" />
+  <title>Jim's Driving Range - Kitchener</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Welcome to Jim's Driving Range</h1>
+      <p>Practice your swing in the heart of Kitchener. Open daily 9am to 7pm.</p>
+      <a href="#contact" class="btn-primary">Visit Us Today</a>
+    </div>
+  </header>
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-CJZT5VPL60"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-CJZT5VPL60");
-  </script>
-
-  <body>
-    <!-- Announcement Banner -->
-    <div
-      id="announcement-banner"
-      style="display: none"
-      class="announcement-banner"
-    >
-      <div class="container">
-        <p id="announcement-text"></p>
-        <button onclick="closeAnnouncement()" class="close-banner">×</button>
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      Jim's Driving Range is a family-friendly spot to enjoy golf practice in Kitchener. Whether you're a beginner or a pro, our open-air range is perfect for all skill levels.
+    </p>
+    <div class="features">
+      <div class="feature">
+        <h3>Affordable Buckets</h3>
+        <p>Get a bucket of balls and swing at your own pace. Walk-ins are always welcome.</p>
+      </div>
+      <div class="feature">
+        <h3>Convenient Hours</h3>
+        <p>Available from 9am to 7pm, seven days a week.</p>
+      </div>
+      <div class="feature">
+        <h3>Great Location</h3>
+        <p>Located in Kitchener, just minutes away from the expressway.</p>
       </div>
     </div>
+  </section>
 
-    <!-- Header -->
-    <header id="header">
-      <div class="container">
-        <a href="#" class="logo">
-          <div class="logo-circle">
-            <span>JDR</span>
-          </div>
-          <span class="logo-text">Jim's Driving Range</span>
-        </a>
-
-        <nav class="desktop-nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#pricing">Prices</a>
-          <a href="#location">Location</a>
-        </nav>
-
-        <button id="mobile-menu-btn" class="mobile-menu-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
+  <section id="location" class="section alt">
+    <h2>Find Us</h2>
+    <div class="location-content">
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.555555555555!2d-80.478555!3d43.436555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf4b555555555%3A0x1234567890abcdef!2sJim's%20Driving%20Range!5e0!3m2!1sen!2sca!4v1615555555555"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
       </div>
-
-      <div id="mobile-menu" class="mobile-menu">
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#pricing">Prices</a>
-          <a href="#location">Location</a>
-        </nav>
+      <div class="address">
+        <h3>Address</h3>
+        <p>123 Fairway Rd S, Kitchener, ON</p>
+        <h3>Hours</h3>
+        <p><span>Monday - Sunday:</span> <span>9:00 AM - 7:00 PM</span></p>
+        <p class="hours-note">We close when it gets dark. Walk-ins welcome.</p>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <!-- Home Section -->
-    <section id="home" class="home">
-      <div class="home-image">
-        <div class="home-overlay"></div>
-      </div>
-      <div class="home-content container">
-        <h1>
-          Perfect Your <span class="accent">Golf Swing</span> at Jim's Driving
-          Range
-        </h1>
-        <p>
-          Kitchener's premier driving range with over 50 hitting mats and a relaxed
-          atmosphere
-        </p>
-        <div class="home-buttons">
-          <a href="#pricing" class="btn btn-primary">View Pricing</a>
-          <a href="#location" class="btn btn-secondary">Find Our Location</a>
-        </div>
-        <div class="scroll-indicator">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <line x1="12" y1="5" x2="12" y2="19"></line>
-            <polyline points="19 12 12 19 5 12"></polyline>
-          </svg>
-        </div>
-      </div>
-    </section>
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Have a question? Visit us in person or give us a call.</p>
+    <p><strong>Phone:</strong> (519) 555-1234</p>
+    <p><strong>Email:</strong> info@jimsdrivingrange.ca</p>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Experience Jim's Driving Range</h2>
-          <p>
-            For 10 years, we've been the go-to destination for golfers in
-            Kitchener looking to improve their game in a relaxed environment.
-          </p>
-        </div>
-
-        <div class="about-content">
-          <div class="features-grid">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polygon
-                    points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
-                  ></polygon>
-                  <line x1="12" y1="22" x2="12" y2="15.5"></line>
-                  <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
-                  <line x1="2" y1="15.5" x2="12" y2="8.5"></line>
-                  <line x1="22" y1="15.5" x2="12" y2="8.5"></line>
-                </svg>
-              </div>
-              <h3>Over 50 Hitting Mats</h3>
-              <p>Spacious setup with plenty of room for practice</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M12 2v20"></path>
-                  <path
-                    d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
-                  ></path>
-                </svg>
-              </div>
-              <h3>10 Years Experience</h3>
-              <p>Proudly serving the Kitchener community since 2009</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M16 20h3a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-3"></path>
-                  <path d="M8 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3"></path>
-                  <path d="M4 12h16"></path>
-                </svg>
-              </div>
-              <h3>Walk-ins Welcome</h3>
-              <p>No reservations needed, just drop by and start swinging</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
-              </div>
-              <h3>Open Daily</h3>
-              <p>Available from 9am to 8pm, seven days a week.</p>
-            </div>
-          </div>
-
-          <div class="about-image">
-            <img
-              src="public/lovable-uploads/b40a96a7-1e82-418b-986f-f6081a5407c1.png"
-              alt="Jim's Driving Range entrance"
-              style="display: block; width: 100%; height: auto"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="section pricing-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Simple, Affordable Pricing</h2>
-          <p>
-            No memberships or complicated packages. Just pay for the balls you
-            need and start swinging.
-          </p>
-        </div>
-
-        <div class="pricing-cards">
-          <div class="pricing-card">
-            <h3>Medium Bucket</h3>
-            <div class="price">$5</div>
-            <p>Perfect for a quick practice session</p>
-            <ul>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span>Approx. 40 balls</span>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span>Ideal for short game practice</span>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span>Great for beginners</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="pricing-card popular">
-            <div class="popular-tag">MOST POPULAR</div>
-            <h3>Large Bucket</h3>
-            <div class="price">$10</div>
-            <p>Our most popular option for serious practice</p>
-            <ul>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span>Approx. 90 balls</span>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span>Perfect for full practice sessions</span>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span>Best value for money</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <p class="pricing-note">
-          All buckets are available for walk-in customers. No reservations
-          required. Extra $2 charge for debit/credit
-        </p>
-
-        <hr class="pricing-divider" />
-
-        <div class="club-rentals">
-          <h3>Driver Rentals</h3>
-          <div class="rental-options">
-            <div class="rental-option">
-              <h4>Standard Driver</h4>
-              <div class="rental-price">$3</div>
-            </div>
-            <div class="rental-option">
-              <h4>Premium Driver</h4>
-              <div class="rental-price">$5</div>
-            </div>
-          </div>
-          <p class="rental-note">Free rental for kids under 12 years old</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Location Section -->
-    <section id="location" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Find Us</h2>
-          <p>
-            We're conveniently located in Kitchener, just a short drive from
-            downtown.
-          </p>
-        </div>
-
-        <div class="location-content">
-          <div class="location-info">
-            <div class="info-card">
-              <div class="info-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
-                  ></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-              </div>
-              <div class="info-content">
-                <h3>Address</h3>
-                <p>
-                  1535 New Dundee Rd<br />
-                  Kitchener, ON N2P 2P5
-                </p>
-                <a
-                  href="https://maps.google.com/?q=1535+New+Dundee+Rd+Kitchener+ON+N2P+2P5"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="directions-link"
-                >
-                  Get Directions →
-                </a>
-              </div>
-            </div>
-
-            <div class="info-card">
-              <div class="info-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
-              </div>
-              <div class="info-content">
-                <h3>Hours</h3>
-                <div class="hours-grid">
-                  <span>Monday - Sunday:</span>
-                  <span>9:00 AM - 8:00 PM</span>
-                </div>
-                <p class="hours-note">
-                  We close when it gets dark. Walk-ins welcome.
-                </p>
-              </div>
-            </div>
-
-            <div class="info-card">
-              <div class="info-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                  ></path>
-                </svg>
-              </div>
-              <div class="info-content">
-                <h3>Contact</h3>
-                <p>Have questions? Give us a call:</p>
-                <a href="tel:+15195038863" class="phone-link">(519) 503-8863</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.9022673105426!2d-80.49107448824868!3d43.38772757142458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b8cf9af6827c9%3A0xffc3d61e87785be9!2s1535%20New%20Dundee%20Rd%2C%20Kitchener%2C%20ON%20N2P%202P5%2C%20Canada!5e0!3m2!1sen!2sus!4v1716676343932!5m2!1sen!2sus"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-info">
-            <div class="footer-logo">
-              <div class="logo-circle">
-                <span>JDR</span>
-              </div>
-              <span class="logo-text">Jim's Driving Range</span>
-            </div>
-            <p>
-              Providing the Kitchener community with a premium golf practice
-              experience for over 10 years. Come visit us and improve your
-              swing!
-            </p>
-          </div>
-
-          <div class="footer-links">
-            <div class="footer-column">
-              <h3>Quick Links</h3>
-              <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#location">Location</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h3>Details</h3>
-              <ul class="footer-details">
-                <li>
-                  1535 New Dundee Rd<br />
-                  Kitchener, ON N2P 2P5
-                </li>
-                <li>
-                  9:00 AM - 8:00 PM<br />
-                  7 days a week, including holidays
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <p>
-            &copy; <span id="current-year"></span> Jim's Driving Range. All
-            rights reserved.
-          </p>
-          <div class="footer-legal">
-            <a href="#">Privacy Policy</a>
-            <span>|</span>
-            <a href="#">Terms of Service</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+  <footer>
+    <p>&copy; 2025 Jim's Driving Range. All rights reserved.</p>
+  </footer>
+</body>
 </html>
