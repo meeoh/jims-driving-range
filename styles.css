@@ -561,8 +561,14 @@ img {
 
 .club-rentals h3 {
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
   color: var(--foreground);
+}
+
+.rental-inline {
+  font-size: 1.25rem;
+  color: var(--foreground);
+  margin-bottom: 0;
 }
 
 .rental-options {
