@@ -802,25 +802,6 @@ img {
   font-size: 0.875rem;
 }
 
-.footer-legal {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.footer-legal a {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.875rem;
-  transition: color 0.3s ease;
-}
-
-.footer-legal a:hover {
-  color: white;
-}
-
-.footer-legal span {
-  color: rgba(255, 255, 255, 0.4);
-}
 
 .announcement-banner {
   position: fixed;

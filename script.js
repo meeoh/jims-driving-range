@@ -103,12 +103,3 @@ function closeAnnouncement() {
 document.addEventListener('DOMContentLoaded', () => {
   checkAnnouncements();
 });
-
-// Update current year in footer
-document.getElementById('current-year').textContent = new Date().getFullYear();
-
-// Mobile menu functionality
-document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-  document.getElementById('mobile-menu').classList.toggle('active');
-  this.classList.toggle('active');
-});
