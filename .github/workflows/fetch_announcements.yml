@@ -1,8 +1,10 @@
 name: Fetch Announcements
 
 on:
-  schedule:
-    - cron: '0 * * * *'  # Run every hour
+  # Hourly schedule turned off for now; the banner is hardcoded in script.js.
+  # Uncomment to turn the Google Sheets feed back on.
+  # schedule:
+  #   - cron: '0 * * * *'  # Run every hour
   workflow_dispatch:  # Allow manual trigger
 
 jobs:

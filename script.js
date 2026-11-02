@@ -58,10 +58,18 @@ if (window.scrollY > 50) {
 }
 
 // Announcement Banner functionality
+// The Google Sheets feed (announcements.txt) is turned off for now.
+// Set USE_SHEET_ANNOUNCEMENTS to true to use it again.
+const USE_SHEET_ANNOUNCEMENTS = false;
+const HARDCODED_ANNOUNCEMENT = "Our last day of the season is Sunday, November 8.";
+
 async function checkAnnouncements() {
   try {
-    const response = await fetch('announcements.txt');
-    const message = await response.text();
+    let message = HARDCODED_ANNOUNCEMENT;
+    if (USE_SHEET_ANNOUNCEMENTS) {
+      const response = await fetch('announcements.txt');
+      message = await response.text();
+    }
     
     const banner = document.getElementById('announcement-banner');
     const header = document.getElementById('header');
