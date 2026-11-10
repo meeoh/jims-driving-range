@@ -60,8 +60,8 @@ if (window.scrollY > 50) {
 // Announcement Banner functionality
 // The Google Sheets feed (announcements.txt) is turned off for now.
 // Set USE_SHEET_ANNOUNCEMENTS to true to use it again.
-const USE_SHEET_ANNOUNCEMENTS = false;
-const HARDCODED_ANNOUNCEMENT = "Our last day of the season is Sunday, November 8.";
+const USE_SHEET_ANNOUNCEMENTS = true;
+const HARDCODED_ANNOUNCEMENT = "Closed for the season, see you next year!";
 
 async function checkAnnouncements() {
   try {
